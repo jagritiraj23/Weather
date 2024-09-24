@@ -1,0 +1,144 @@
+/* Style for the container */
+.container {
+    background: linear-gradient(45deg, black, rgb(0, 247, 255));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center content */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+/* Style for the title */
+h1 {
+    font-size: 3vw; /* Use viewport width for font size to adapt to screen size */
+    margin-bottom: 20px;
+}
+
+/* Style for the app card */
+.app {
+    max-width: 400px;
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Make height auto to adjust dynamically */
+    background: white;
+    border-radius: 9px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    box-sizing: border-box;
+}
+
+/* Style for the button */
+.but {
+    width: 80%; /* Make button width more flexible */
+    margin: 20px auto;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 1.5vw; /* Use viewport width to scale the button text */
+    font-weight: bold;
+    padding: 10px; /* Add more padding for touch devices */
+}
+
+/* Style for the button hover effect */
+.but:hover {
+    background-color: #1358a2;
+}
+
+/* Style for the input field */
+input {
+    font-size: 1.5vw; /* Use viewport width to scale input text */
+    border-color: #007BFF;
+    border-width: 4px;
+    border-radius: 20px 3px;
+    padding: 10px; /* Increase padding for better UX */
+    width: 80%; /* Ensure input spans most of the container */
+    margin: 20px auto; /* Center the input */
+    box-sizing: border-box;
+}
+
+/* Style for weather display area */
+.code {
+    margin-top: 20px;
+    font-size: 1.3vw; /* Responsive font size for weather details */
+    line-height: 1.6; /* Better line spacing for readability */
+}
+
+/* Responsive design for screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .app {
+        padding: 15px;
+    }
+
+    .but {
+        width: 90%;
+        font-size: 18px; /* Fixed size for larger mobile screens */
+        padding: 10px;
+    }
+
+    input {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+    .app {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .but {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .code {
+        font-size: 16px;
+    }
+}
+
+/* Responsive design for screens smaller than 480px */
+@media (max-width: 480px) {
+    .app {
+        margin: 10px;
+        padding: 10px;
+        height: auto; /* Allow dynamic height */
+    }
+
+    .but {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .code {
+        font-size: 14px;
+    }
+}
